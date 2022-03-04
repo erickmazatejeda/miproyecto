@@ -70,7 +70,7 @@ def get_datosTn(tonelada):
     return jsonify({ "pesoTn" : pesoTn})        
 
 @app.route("/kilogramo-tonelada/<string:kilogramo>")
-def get_datosKH(kilogramo):
+def get_datosKT(kilogramo):
     kilogramo = float(kilogramo)
     pesoKT = kilogramo/10
     return jsonify({ "pesoKT" : pesoKT})  
